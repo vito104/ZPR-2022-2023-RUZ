@@ -22,7 +22,6 @@ public class Aplikace {
     public static void main(String[] args) {
         int jedna = 5;
         int dva = 1;
-        
         System.out.println("Původní hodnota proměnné jedna je: " + jedna + " a původní hodnota proměnné dva je: " + dva);
         prohod(jedna, dva);
     }
