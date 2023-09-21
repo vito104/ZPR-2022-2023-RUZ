@@ -11,9 +11,6 @@ package aplikace;
  */
 public class Aplikace {
 
-    /**
-     * @param args the command line arguments
-     */
 
      public static void prohod(int jedna, int dva){
         jedna = jedna + dva;
