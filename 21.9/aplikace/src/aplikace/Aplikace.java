@@ -14,8 +14,20 @@ public class Aplikace {
     /**
      * @param args the command line arguments
      */
+
+     public static void prohod(int jedna, int dva){
+        jedna = jedna + dva;
+        dva = jedna - dva;
+        jedna = jedna - dva;
+        
+        System.out.println("jedna je: " + jedna   + " " + "druha je: " + dva);
+     }
     public static void main(String[] args) {
-        // TODO code application logic here
+        int jedna = 5;
+        int dva = 1;
+        
+        System.out.println("Původní hodnota proměnné jedna je: " + jedna + " a původní hodnota proměnné dva je: " + dva);
+        prohod(jedna, dva);
     }
     
 }
