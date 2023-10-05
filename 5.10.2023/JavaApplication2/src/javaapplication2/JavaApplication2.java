@@ -20,6 +20,19 @@ public class JavaApplication2 {
         System.out.println("Zadejte druhou hodnotu: ");
         int b = sc.nextInt();
         System.out.println("Hledám větší ze dvou hodnot:  A = " + a + " B = " + b);
+        try{
+            if(a > b){
+                System.out.println("A je větší");
+             }
+            else{
+                System.out.println("B je větší");
+             }
+            }
+        catch(Exception e){
+            System.out.println("Nastala neošetřená vyjímka " + e);
+        }
+
+
     }
 
     
