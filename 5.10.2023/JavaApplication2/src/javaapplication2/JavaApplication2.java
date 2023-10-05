@@ -24,8 +24,11 @@ public class JavaApplication2 {
             if(a > b){
                 System.out.println("A je větší");
              }
-            else{
+            else if(b > a){
                 System.out.println("B je větší");
+             }
+             else{
+                System.out.println("Čísla jsou si rovny");
              }
             }
         catch(Exception e){
