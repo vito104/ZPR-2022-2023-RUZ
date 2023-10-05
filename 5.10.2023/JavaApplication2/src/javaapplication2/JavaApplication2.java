@@ -19,7 +19,7 @@ public class JavaApplication2 {
         int a = sc.nextInt();
         System.out.println("Zadejte druhou hodnotu: ");
         int b = sc.nextInt();
-        System.out.println("Hledám:  A = " + a + "B = " + b);
+        System.out.println("Hledám větší ze dvou hodnot:  A = " + a + " B = " + b);
     }
 
     
