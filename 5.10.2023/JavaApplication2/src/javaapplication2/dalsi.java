@@ -14,19 +14,19 @@ public class dalsi {
             System.out.println("Maximum je 100 bodů");
         } else{
             
-            if(body > 91){
+            if(body > 90){
                 znamka = 1;
             }
-            else if(body < 91){
+            else if(body > 80){
                 znamka = 2;
             }
-            else if (body < 81){
+            else if (body > 60){
                 znamka = 3;
             }
-            else if(body < 61){
+            else if(body > 50){
                 znamka = 4;
             }
-            else if(body < 51){
+            else if(body <= 50){
                 znamka = 5;
             }
             System.out.println("Výsledná známka: " + znamka);
