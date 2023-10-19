@@ -19,5 +19,7 @@ public class App {
             zbytek = zbytek - iCis2;
             podil++;
         }
+
+        System.out.println("podil: " + podil + " zbytek " + zbytek);
     }
 }
