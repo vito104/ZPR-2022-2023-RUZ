@@ -9,10 +9,11 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
+        System.out.println("Zvolená hodnota: " + n);
         int count = 0;
         int suma = 0;
-        while(count <= n){
-            suma = count + n;
+        for(int pruchod = 0; pruchod < n; pruchod++){
+            suma += n;
         }
         System.out.println(suma);
 
