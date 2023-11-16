@@ -5,30 +5,27 @@ public class App {
         Scanner sc = new Scanner(System.in);
         int c = sc.nextInt();
         int count = 0;
-
-        for(int i = 1; i <= c; i++){
+        int i = 1;
+        while (i < c) {
+            
+        }
+        while (count < 3) {
             System.out.println("Testuji dělení číslem " + i);
-            if(c % i == 0){
-                System.out.println("Je dělitelné číslem " + i);
+            if ((c % i) == 0) {
                 count++;
-                System.out.println("Počet průchodů: " + count);
+                i++;
+                System.out.println("Číslo je dělitelné číslem: " + i);
+                System.out.println("Počet průchodů: " + i);
             }
             else{
-                System.out.println("Není dělitelné číslem " + i);
-                System.out.println("Počet průchodů " + count);
+                i++;
             }
-            if(count > 2){
-
+            if (count > 2) {
                 System.out.println("Není prvočíslo");
-                break;
+            } else {
+                System.out.println("Je prvočíslo");
             }
-            if(count == 2){
-                System.out.println("Je to prvočíslo");
-            }
-            System.out.println("Algoritmus byl ukončen");
-
-
         }
-    } 
-}
 
+    }
+}
