@@ -18,11 +18,12 @@ public class JavaApplication5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        double taxa = 30;
+        final double TAXA = 30;
         int limit = 30;
         int chtic = 1;
         int nastup = 100;
-        System.out.println("TAXI Ružička, zvolená taxa: " + taxa);
+        double taxa = 0;
+        System.out.println("TAXI Ružička, zvolená taxa: " + TAXA);
 
         Scanner sc = new Scanner(System.in);
         while(chtic == 1){
@@ -33,7 +34,7 @@ public class JavaApplication5 {
                 System.out.println("Zákazník jede více než je limit, zadej slevu z taxy v % : ");
                 int sleva = sc.nextInt();
                 sleva = sleva % 100;
-                taxa = taxa * sleva;
+                taxa = TAXA * sleva;
                 System.out.println("Nová taxa: " + taxa);
             }
             double suma = taxa * km + nastup;
@@ -45,4 +46,4 @@ public class JavaApplication5 {
     }
     }
     
-}
+
